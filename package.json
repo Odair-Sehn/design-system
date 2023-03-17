@@ -1,0 +1,26 @@
+{
+  "name": "my-ds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "peerDependencies": {
+    "vue": "^3.2.21"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^3.19.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0"
+  }
+}
