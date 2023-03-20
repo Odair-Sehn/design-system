@@ -15,7 +15,7 @@
   "files": [
     "dist/*"
   ],
-  "author": "",
+  "author": "", 
   "license": "ISC",
   "dependencies": {
     "@quasar/extras": "^1.15.11",
