@@ -6,8 +6,7 @@
   "module": "dist/library.mjs",
   "type": "module",
   "scripts": {
-    "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "keywords": [],
   "peerDependencies": {
@@ -18,9 +17,15 @@
   ],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@quasar/extras": "^1.15.11",
+    "quasar": "^2.11.7",
+    "vue": "^3.2.21"
+  },
   "devDependencies": {
     "rollup": "^3.19.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "1.32.12"
   }
 }
