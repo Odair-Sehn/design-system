@@ -1,0 +1,46 @@
+
+<Meta title="Style Guide/Spacing" />
+
+# Spacing
+
+The following tokens control the spacing in your theme. You can use it as CSS variables in your application styles to inherit the default values in a custom element:
+
+```css
+/* my-custom-element.css */
+.my-custom-element {
+  margin-top: var(--space_2x);
+  padding-top: var(--space);
+}
+```
+
+You can also create a new CSS theme file and customize these values with your app style guide values.
+
+```css
+/* my-custom-theme.css */
+
+:root {
+  --space: 1.5rem;
+}
+```
+
+Changing the `--space` token value will change all variations accordingly.
+
+Spacing tokens are defined based on the default font size (in the default theme that is 16px).
+
+| Tokens            | Default Value     | Computed Value |
+| ----------------- | ----------------- | -------------- |
+| `--space__6x`     | `--space * 6`     | 96px           |
+| `--space__5-5x`   | `--space * 5.5`   | 88px           |
+| `--space__5x`     | `--space * 5`     | 80px           |
+| `--space__4-5x`   | `--space * 4.5`   | 72px           |
+| `--space__4x`     | `--space * 4`     | 64px           |
+| `--space__3-5x`   | `--space * 3.5`   | 56px           |
+| `--space__3x`     | `--space * 3`     | 48px           |
+| `--space__2-5x`   | `--space * 2.5`   | 40px           |
+| `--space__2x`     | `--space * 2`     | 32px           |
+| `--space__1-5x`   | `--space * 1.5`   | 24px           |
+| `--space`         | 1rem              | 16px           |
+| `--space__0-75x`  | `--space * 0.75`  | 12px           |
+| `--space__0-5x`   | `--space * 0.5`   | 8px            |
+| `--space__0-25x`  | `--space * 0.25`  | 4px            |
+| `--space__0-125x` | `--space * 0.125` | 2px            |

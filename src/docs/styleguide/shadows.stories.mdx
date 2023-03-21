@@ -1,0 +1,43 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Style Guide/Shadows" />
+
+# Shadows
+
+The following tokens control the shadow appearance in your theme. You can create new themes by setting CSS variables with different values, and the DS will replace its default values with your theme shadows accordingly.
+
+For example, if you want to create a new theme with a new small shadow:
+
+```css
+/* my-custom-theme.css */
+
+:root {
+  --shadow-sm: 0px 4px 7px 0px; /* your new small shadow sizes */
+}
+
+.your-custom-element {
+  box-shadow: var(--shadow-sm) var(--color-primary);
+}
+```
+
+The shadow tokens need to be used together with a color token to set the shadow color.
+
+| Token        | Preview                                        |
+| ------------ | ---------------------------------------------- |
+| `shadow--sm` | <span class='dass-sb-shadow shadow-sm'></span> |
+| `shadow--md` | <span class='dass-sb-shadow shadow-md'></span> |
+| `shadow--lg` | <span class='dass-sb-shadow shadow-lg'></span> |
+
+# Focus Outline
+
+The focus outline is a `outline` CSS value used to apply a subtle shadow to the focused element for accessibility use.
+
+```css
+.your-form-control:focus {
+  outline: var(--shadow-focus);
+}
+```
+
+| Token            | Preview                                           |
+| ---------------- | ------------------------------------------------- |
+| `--shadow-focus` | <span class='dass-sb-shadow shadow-focus'></span> |

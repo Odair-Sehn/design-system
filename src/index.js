@@ -5,7 +5,7 @@ import '@quasar/extras/material-icons/material-icons.css'
 // Import Quasar css
 import 'quasar/src/css/index.sass'
 
-import components from'./components'
+import components from './components/index'
 
 const plugin = {
   install (Vue) {
