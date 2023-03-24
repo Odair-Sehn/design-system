@@ -6,6 +6,7 @@ import '@quasar/extras/animate/fadeInRight.css';
 import '@quasar/extras/animate/fadeOutRight.css';
 import 'quasar/dist/quasar.css';
 import '../src/styles/dass-tokens.css';
+import "../src/styles/class-preview-sb.css"
 
 import { app } from '@storybook/vue3';
 import { Quasar } from 'quasar';
