@@ -1,4 +1,3 @@
-import '@quasar/extras/roboto-font/roboto-font.css';
 import '@quasar/extras/material-icons/material-icons.css';
 import '@quasar/extras/animate/fadeInUp.css';
 import '@quasar/extras/animate/fadeOutDown.css';
@@ -16,6 +15,9 @@ app.use(Quasar, {});
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
+  docs: {
+    inlineStories: true,
+  },
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
