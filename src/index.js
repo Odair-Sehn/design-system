@@ -5,7 +5,7 @@ import '@quasar/extras/material-icons/material-icons.css'
 // Import Quasar css
 import 'quasar/src/css/index.sass'
 import './styles/dass-tokens.css'
-
+ 
 import components from './components/index'
  
 const plugin = {
