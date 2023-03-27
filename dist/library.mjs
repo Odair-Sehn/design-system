@@ -1,78 +1,57 @@
 import { Quasar } from 'quasar';
 import '@quasar/extras/material-icons/material-icons.css';
 import 'quasar/src/css/index.sass';
-import { openBlock, createElementBlock, resolveComponent, createBlock, withCtx, createVNode, createElementVNode } from 'vue';
-
-var script$3 = {
-  name: 'InputText'
-};
-
-const _hoisted_1$1 = { type: "text" };
-
-function render$3(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("input", _hoisted_1$1))
-}
-
-script$3.render = render$3;
-script$3.__file = "src/InputText.vue";
-
-var script$2 = {
-  name: 'InputMustafa'
-};
-
-function render$2(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_q_input = resolveComponent("q-input");
-
-  return (openBlock(), createBlock(_component_q_input, { label: "Descrição" }))
-}
-
-script$2.render = render$2;
-script$2.__file = "src/InputMustafa.vue";
+import { resolveComponent, openBlock, createElementBlock, createVNode, normalizeStyle } from 'vue';
 
 var script$1 = {
-  name: 'InputTextarea'
+  name: 'dass-button',
+  props: {
+    color: String,
+    textColor: String,
+    label: String
+  },
 };
 
 function render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return (openBlock(), createElementBlock("textarea"))
+  const _component_q_btn = resolveComponent("q-btn");
+
+  return (openBlock(), createElementBlock("div", null, [
+    createVNode(_component_q_btn, {
+      style: normalizeStyle(`background-color: ${$props.color}; color: ${$props.textColor}`),
+      label: $props.label
+    }, null, 8 /* PROPS */, ["style", "label"])
+  ]))
 }
 
 script$1.render = render$1;
-script$1.__file = "src/InputTextarea.vue";
+script$1.__file = "src/components/dass-button/dass-button.vue";
 
 var script = {
-  name: 'InputMustafaError'
+  name: 'dass-input',
+  props: {
+    label: String,
+    placeholder: String
+  }
 };
 
-const _hoisted_1 = /*#__PURE__*/createElementVNode("img", { src: "https://cdn.quasar.dev/logo-v2/svg/logo.svg" }, null, -1 /* HOISTED */);
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_q_avatar = resolveComponent("q-avatar");
   const _component_q_input = resolveComponent("q-input");
 
-  return (openBlock(), createBlock(_component_q_input, {
-    color: "teal",
-    outlined: "",
-    modelValue: _ctx.text,
-    "onUpdate:modelValue": _cache[0] || (_cache[0] = $event => ((_ctx.text) = $event)),
-    label: "Label"
-  }, {
-    append: withCtx(() => [
-      createVNode(_component_q_avatar, null, {
-        default: withCtx(() => [
-          _hoisted_1
-        ]),
-        _: 1 /* STABLE */
-      })
-    ]),
-    _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["modelValue"]))
+  return (openBlock(), createElementBlock("div", null, [
+    createVNode(_component_q_input, {
+      label: $props.label,
+      placeholder: $props.placeholder
+    }, null, 8 /* PROPS */, ["label", "placeholder"])
+  ]))
 }
 
 script.render = render;
-script.__file = "src/InputMustafaError.vue";
+script.__file = "src/components/dass-input/dass-input.vue";
 
-var components = { InputTextarea: script$1, InputText: script$3, InputMustafa: script$2, InputMustafaError: script };
+var components = {
+    DassButton: script$1,
+    DassInput: script
+};
 
 const plugin = {
   install (Vue) {

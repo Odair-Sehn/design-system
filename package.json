@@ -36,6 +36,7 @@
     "@storybook/vue3": "^6.5.16",
     "babel-loader": "^8.3.0",
     "rollup": "^3.19.1",
+    "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0"
   }
