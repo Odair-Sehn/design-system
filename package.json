@@ -21,7 +21,9 @@
   "license": "ISC",
   "dependencies": {
     "@quasar/extras": "^1.15.11",
+    "postcss": "^8.4.21",
     "quasar": "^2.11.7",
+    "rollup-plugin-postcss": "^4.0.2",
     "vue": "^3.2.21"
   },
   "devDependencies": {
@@ -36,7 +38,6 @@
     "@storybook/vue3": "^6.5.16",
     "babel-loader": "^8.3.0",
     "rollup": "^3.19.1",
-    "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0"
   }

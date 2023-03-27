@@ -1,6 +1,6 @@
 import vue from 'rollup-plugin-vue'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import css from 'rollup-plugin-css-only'
+import postcss from 'rollup-plugin-postcss'
 
 export default [
   {
@@ -13,12 +13,19 @@ export default [
       {
         format: 'cjs',
         file: 'dist/library.js'
+      },
+      {
+        format: 'es',
+        file: 'dist/style.css'
       }
     ],
     plugins: [
       vue(), 
       peerDepsExternal(),
-      css()
+      postcss({
+        modules: true,
+        extract: true
+      })
     ]
   }
 ]
