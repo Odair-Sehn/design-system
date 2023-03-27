@@ -7,7 +7,7 @@ import 'quasar/src/css/index.sass'
 import './styles/dass-tokens.css'
 
 import components from './components/index'
-
+ 
 const plugin = {
   install (Vue) {
     Vue.use(Quasar, {
