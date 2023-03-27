@@ -24,7 +24,7 @@
     "postcss": "^8.4.21",
     "quasar": "^2.11.7",
     "rollup-plugin-postcss": "^4.0.2",
-    "vue": "^3.2.21"
+    "vue": "^3.2.21",
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",

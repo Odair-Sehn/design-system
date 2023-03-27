@@ -22,10 +22,7 @@ export default [
     plugins: [
       vue(), 
       peerDepsExternal(),
-      postcss({
-        modules: true,
-        extract: true
-      })
+      postcss()
     ]
   }
 ]
