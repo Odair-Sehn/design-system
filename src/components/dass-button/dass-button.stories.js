@@ -17,6 +17,6 @@ export const Default = Template.bind({});
 
 Default.args = {
   label: 'Label',
-  color: 'var(--color-primary)',
+  color: 'var(--dass-color--blue)',
   textColor: 'white'
 }

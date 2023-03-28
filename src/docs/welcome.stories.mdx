@@ -4,34 +4,34 @@ import { Meta } from "@storybook/addon-docs";
 
 # Getting Started
 
-Welcome to the Dass Design System documentation. This guide will help you install and use the `ds-ui` lib package in your projects.
+Welcome to the Dass Design System documentation. This guide will help you install and use the `dass-ds-ui` lib package in your projects.
 
-`ds-ui` is compatible with Vue v3.0 and above. Since the project isn't hosted in a package registry such as NPM yet, you will need to add it to your project through the private repo to start using it. This tutorial will help with all the steps.
+`dass-ds-ui` is compatible with Vue v3.0 and above. Since the project isn't hosted in a package registry such as NPM yet, you will need to add it to your project through the private repo to start using it. This tutorial will help with all the steps.
 
 ## Installation
 
 First, you need to set up your environment. [Follow these instructions](https://sga.grupodass.com.br/bitbucket/projects/DS/repos/ds-ui/browse/docs/INSTALL.md) to do so.
 
-In your project, add the `ds-ui` to your dependencies like so:
+In your project, add the `dass-ds-ui` to your dependencies like so:
 
 ```bash
 # with yarn
-yarn add git+ssh://git@10.100.0.22:7999/ds/ds-ui.git
+yarn add git+ssh://git@10.100.0.22:7999/ds/dass-ds-ui.git
 
 # with NPM
-npm install --save git+ssh://git@10.100.0.22:7999/ds/ds-ui.git
+npm install --save git+ssh://git@10.100.0.22:7999/ds/dass-ds-ui.git
 ```
 
-You can optionally choose which specific version of the `ds-ui` package you want to use by appending its version (eg. `#v1.0`) in the repository URL (check out the [CHANGELOG](https://sga.grupodass.com.br/bitbucket/projects/DS/repos/ds-ui/browse/docs/CHANGELOG.md)).
+You can optionally choose which specific version of the `dass-ds-ui` package you want to use by appending its version (eg. `#v1.0`) in the repository URL (check out the [CHANGELOG](https://sga.grupodass.com.br/bitbucket/projects/DS/repos/ds-ui/browse/docs/CHANGELOG.md)).
 
 ## Usage
 
-You can add the `ds-ui` as a plugin in your app.
+You can add the `dass-ds-ui` as a plugin in your app.
 
 ```js
 // main.js, or your app entrypoint.
 import { createApp } from "vue";
-import dassDS from "ds-ui";
+import dassDS from "dass-ds-ui";
 import App from "App.vue";
 
 createApp(App).use(dassDS).mount("#app");

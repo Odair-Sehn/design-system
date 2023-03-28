@@ -8,15 +8,15 @@ export default [
     output: [
       {
         format: 'esm',
-        file: 'dist/library.mjs'
+        file: 'dist/dass-library.mjs'
       },
       {
         format: 'cjs',
-        file: 'dist/library.js'
+        file: 'dist/dass-library.js'
       },
       {
         format: 'es',
-        file: 'dist/style.css'
+        file: 'dist/dass-style.css'
       }
     ],
     plugins: [

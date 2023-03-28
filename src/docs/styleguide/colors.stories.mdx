@@ -9,7 +9,7 @@ The following tokens control the color appearance in your theme. You can use it 
 ```css
 /* my-custom-element.css */
 .my-custom-element {
-  background-color: var(--color-primary);
+  background-color: var(--dass-color--primary);
 }
 ```
 
@@ -19,7 +19,7 @@ You can also create a new CSS theme file and customize these values with your ap
 /* my-custom-theme.css */
 
 :root {
-  --color-primary: #ff0000;
+  --dass-color--primary: #CB3645;
 }
 ```
 
@@ -27,25 +27,25 @@ Now the Design System will use your new primary color in your app.
 
 ## Brand
 
-| Token                    | Value     | Preview                                                  |
-| ------------------------ | --------- | -------------------------------------------------------- |
-| `--color-brand`          | `#CB3645` | <span class='dass-sb-color color-brand'></span>          |
-| `--color-brand__light`   | `#F4C7CB` | <span class='dass-sb-color color-brand__light'></span>   |
-| `--color-brand__lighter` | `#FFE8EA` | <span class='dass-sb-color color-brand__lighter'></span> |
-| `--color-brand__dark`    | `#992934` | <span class='dass-sb-color color-brand__dark'></span>    |
-| `--color-brand__darker`  | `#4D151A` | <span class='dass-sb-color color-brand__darker'></span>  |
+| Token                          |   Value   | Preview                                                        |
+| -----------------------------  | --------- | -------------------------------------------------------------- |
+| `--dass-color--brand`          | `#CB3645` | <span class='dass-sb-color dass-color--brand'></span>          |
+| `--dass-color--brand__light`   | `#F4C7CB` | <span class='dass-sb-color dass-color--brand__light'></span>   |
+| `--dass-color--brand__lighter` | `#FFE8EA` | <span class='dass-sb-color dass-color--brand__lighter'></span> |
+| `--dass-color--brand__dark`    | `#992934` | <span class='dass-sb-color dass-color--brand__dark'></span>    |
+| `--dass-color--brand__darker`  | `#4D151A` | <span class='dass-sb-color dass-color--brand__darker'></span>  |
 
 ## Primary
 
 The main colors of the DS, used by most components.
 
-| Token                      | Value                              | Preview                                                    |
-| -------------------------- | ---------------------------------- | ---------------------------------------------------------- |
-| `--color-primary`          | `--color-secondary--blue`          | <span class='dass-sb-color color-primary'></span>          |
-| `--color-primary__light`   | `--color-secondary--blue__light`   | <span class='dass-sb-color color-primary__light'></span>   |
-| `--color-primary__lighter` | `--color-secondary--blue__lighter` | <span class='dass-sb-color color-primary__lighter'></span> |
-| `--color-primary__dark`    | `--color-secondary--blue__dark`    | <span class='dass-sb-color color-primary__dark'></span>    |
-| `--color-primary__darker`  | `--color-secondary--blue__darker`  | <span class='dass-sb-color color-primary__darker'></span>  |
+| Token                            | Value                         | Preview                                                          |
+| -------------------------------  | ----------------------------- | ---------------------------------------------------------------- |
+| `--dass-color--primary`          | `--dass-color--blue`          | <span class='dass-sb-color dass-color--primary'></span>          |
+| `--dass-color--primary__light`   | `--dass-color--blue__light`   | <span class='dass-sb-color dass-color--primary__light'></span>   |
+| `--dass-color--primary__lighter` | `--dass-color--blue__lighter` | <span class='dass-sb-color dass-color--primary__lighter'></span> |
+| `--dass-color--primary__dark`    | `--dass-color--blue__dark`    | <span class='dass-sb-color dass-color--primary__dark'></span>    |
+| `--dass-color--primary__darker`  | `--dass-color--blue__darker`  | <span class='dass-sb-color dass-color--primary__darker'></span>  |
 
 ## Secondaries
 
@@ -53,59 +53,59 @@ Supporting colors, used for details and variations.
 
 ### Blue
 
-| Token                              | Value     | Preview                                                            |
-| ---------------------------------- | --------- | ------------------------------------------------------------------ |
-| `--color-secondary--blue`          | `#00A2C7` | <span class='dass-sb-color color-secondary--blue'></span>          |
-| `--color-secondary--blue__light`   | `#82C9D9` | <span class='dass-sb-color color-secondary--blue__light'></span>   |
-| `--color-secondary--blue__lighter` | `#D5EFF5` | <span class='dass-sb-color color-secondary--blue__lighter'></span> |
-| `--color-secondary--blue__dark`    | `#006C85` | <span class='dass-sb-color color-secondary--blue__dark'></span>    |
-| `--color-secondary--blue__darker`  | `#004352` | <span class='dass-sb-color color-secondary--blue__darker'></span>  |
+| Token                         | Value     | Preview                                                       |
+| ----------------------------- | --------- | ------------------------------------------------------------- |
+| `--dass-color--blue`          | `#00A2C7` | <span class='dass-sb-color dass-color--blue'></span>          |
+| `--dass-color--blue__light`   | `#82C9D9` | <span class='dass-sb-color dass-color--blue__light'></span>   |
+| `--dass-color--blue__lighter` | `#D5EFF5` | <span class='dass-sb-color dass-color--blue__lighter'></span> |
+| `--dass-color--blue__dark`    | `#006C85` | <span class='dass-sb-color dass-color--blue__dark'></span>    |
+| `--dass-color--blue__darker`  | `#004352` | <span class='dass-sb-color dass-color--blue__darker'></span>  |
 
 ### Green
 
-| Token                               | Value     | Preview                                                             |
-| ----------------------------------- | --------- | ------------------------------------------------------------------- |
-| `--color-secondary--green`          | `#c1e54e` | <span class='dass-sb-color color-secondary--green'></span>          |
-| `--color-secondary--green__light`   | `#e5fc9c` | <span class='dass-sb-color color-secondary--green__light'></span>   |
-| `--color-secondary--green__lighter` | `#eefac7` | <span class='dass-sb-color color-secondary--green__lighter'></span> |
-| `--color-secondary--green__dark`    | `#97b33d` | <span class='dass-sb-color color-secondary--green__dark'></span>    |
-| `--color-secondary--green__darker`  | `#6c7f2b` | <span class='dass-sb-color color-secondary--green__darker'></span>  |
+| Token                          | Value     | Preview                                                        |
+| ------------------------------ | --------- | -------------------------------------------------------------- |
+| `--dass-color--green`          | `#c1e54e` | <span class='dass-sb-color dass-color--green'></span>          |
+| `--dass-color--green__light`   | `#e5fc9c` | <span class='dass-sb-color dass-color--green__light'></span>   |
+| `--dass-color--green__lighter` | `#eefac7` | <span class='dass-sb-color dass-color--green__lighter'></span> |
+| `--dass-color--green__dark`    | `#97b33d` | <span class='dass-sb-color dass-color--green__dark'></span>    |
+| `--dass-color--green__darker`  | `#6c7f2b` | <span class='dass-sb-color dass-color--green__darker'></span>  |
 
 ### Yellow
 
-| Token                                | Value     | Preview                                                              |
-| ------------------------------------ | --------- | -------------------------------------------------------------------- |
-| `--color-secondary--yellow`          | `#ffc62d` | <span class='dass-sb-color color-secondary--yellow'></span>          |
-| `--color-secondary--yellow__light`   | `#fee296` | <span class='dass-sb-color color-secondary--yellow__light'></span>   |
-| `--color-secondary--yellow__lighter` | `#fff3d4` | <span class='dass-sb-color color-secondary--yellow__lighter'></span> |
-| `--color-secondary--yellow__dark`    | `#cca43a` | <span class='dass-sb-color color-secondary--yellow__dark'></span>    |
-| `--color-secondary--yellow__darker`  | `#403817` | <span class='dass-sb-color color-secondary--yellow__darker'></span>  |
+| Token                           | Value     | Preview                                                         |
+| ------------------------------- | --------- | --------------------------------------------------------------- |
+| `--dass-color--yellow`          | `#ffc62d` | <span class='dass-sb-color dass-color--yellow'></span>          |
+| `--dass-color--yellow__light`   | `#fee296` | <span class='dass-sb-color dass-color--yellow__light'></span>   |
+| `--dass-color--yellow__lighter` | `#fff3d4` | <span class='dass-sb-color dass-color--yellow__lighter'></span> |
+| `--dass-color--yellow__dark`    | `#cca43a` | <span class='dass-sb-color dass-color--yellow__dark'></span>    |
+| `--dass-color--yellow__darker`  | `#403817` | <span class='dass-sb-color dass-color--yellow__darker'></span>  |
 
 ### Orange
 
-| Token                                | Value     | Preview                                                              |
-| ------------------------------------ | --------- | -------------------------------------------------------------------- |
-| `--color-secondary--orange`          | `#ff6a13` | <span class='dass-sb-color color-secondary--orange'></span>          |
-| `--color-secondary--orange__light`   | `#ff995e` | <span class='dass-sb-color color-secondary--orange__light'></span>   |
-| `--color-secondary--orange__lighter` | `#ffd1b7` | <span class='dass-sb-color color-secondary--orange__lighter'></span> |
-| `--color-secondary--orange__dark`    | `#d84f01` | <span class='dass-sb-color color-secondary--orange__dark'></span>    |
-| `--color-secondary--orange__darker`  | `#b54504` | <span class='dass-sb-color color-secondary--orange__darker'></span>  |
+| Token                           | Value     | Preview                                                         |
+| ------------------------------- | --------- | --------------------------------------------------------------- |
+| `--dass-color--orange`          | `#ff6a13` | <span class='dass-sb-color dass-color--orange'></span>          |
+| `--dass-color--orange__light`   | `#ff995e` | <span class='dass-sb-color dass-color--orange__light'></span>   |
+| `--dass-color--orange__lighter` | `#ffd1b7` | <span class='dass-sb-color dass-color--orange__lighter'></span> |
+| `--dass-color--orange__dark`    | `#d84f01` | <span class='dass-sb-color dass-color--orange__dark'></span>    |
+| `--dass-color--orange__darker`  | `#b54504` | <span class='dass-sb-color dass-color--orange__darker'></span>  |
 
 ## Neutrals
 
 Used in different contexts to balance your layouts with colors.
 
-| Token                  | Value     | Preview                                                |
-| ---------------------- | --------- | ------------------------------------------------------ |
-| `--color-neutral__100` | `#1f1f22` | <span class='dass-sb-color color-neutral__100'></span> |
-| `--color-neutral__90`  | `#2f3033` | <span class='dass-sb-color color-neutral__90'></span>  |
-| `--color-neutral__70`  | `#585b60` | <span class='dass-sb-color color-neutral__70'></span>  |
-| `--color-neutral__50`  | `#83878e` | <span class='dass-sb-color color-neutral__50'></span>  |
-| `--color-neutral__30`  | `#adb2bc` | <span class='dass-sb-color color-neutral__30'></span>  |
-| `--color-neutral__15`  | `#ced1d7` | <span class='dass-sb-color color-neutral__15'></span>  |
-| `--color-neutral__07`  | `#eeeef0` | <span class='dass-sb-color color-neutral__07'></span>  |
-| `--color-neutral__03`  | `#fafafa` | <span class='dass-sb-color color-neutral__03'></span>  |
-| `--color-neutral__00`  | `#ffffff` | <span class='dass-sb-color color-neutral__00'></span>  |
+| Token                       | Value     | Preview                                                     |
+| ----------------------      | --------- | ----------------------------------------------------------- |
+| `--dass-color-neutral__100` | `#1f1f22` | <span class='dass-sb-color dass-color-neutral__100'></span> |
+| `--dass-color-neutral__90`  | `#2f3033` | <span class='dass-sb-color dass-color-neutral__90'></span>  |
+| `--dass-color-neutral__70`  | `#585b60` | <span class='dass-sb-color dass-color-neutral__70'></span>  |
+| `--dass-color-neutral__50`  | `#83878e` | <span class='dass-sb-color dass-color-neutral__50'></span>  |
+| `--dass-color-neutral__30`  | `#adb2bc` | <span class='dass-sb-color dass-color-neutral__30'></span>  |
+| `--dass-color-neutral__15`  | `#ced1d7` | <span class='dass-sb-color dass-color-neutral__15'></span>  |
+| `--dass-color-neutral__07`  | `#eeeef0` | <span class='dass-sb-color dass-color-neutral__07'></span>  |
+| `--dass-color-neutral__03`  | `#fafafa` | <span class='dass-sb-color dass-color-neutral__03'></span>  |
+| `--dass-color-neutral__00`  | `#ffffff` | <span class='dass-sb-color dass-color-neutral__00'></span>  |
 
 ## Status
 
@@ -113,48 +113,48 @@ Status indicating feedbacks for the user.
 
 ### Success
 
-| Token                            | Value     | Preview                                                          |
-| -------------------------------- | --------- | ---------------------------------------------------------------- |
-| `--color-status--success`        | `#72cc31` | <span class='dass-sb-color color-status--success'></span>        |
-| `--color-status--success__light` | `#bef298` | <span class='dass-sb-color color-status--success__light'></span> |
-| `--color-status--success__dark`  | `#3e6d1c` | <span class='dass-sb-color color-status--success__dark'></span>  |
+| Token                                 | Value     | Preview                                                               |
+| --------------------------------      | --------- | --------------------------------------------------------------------  |
+| `--dass-color-status--success`        | `#72cc31` | <span class='dass-sb-color dass-color-status--success'></span>        |
+| `--dass-color-status--success__light` | `#bef298` | <span class='dass-sb-color dass-color-status--success__light'></span> |
+| `--dass-color-status--success__dark`  | `#3e6d1c` | <span class='dass-sb-color dass-color-status--success__dark'></span>  |
 
 ### Warning
 
-| Token                            | Value     | Preview                                                          |
-| -------------------------------- | --------- | ---------------------------------------------------------------- |
-| `--color-status--warning`        | `#efa002` | <span class='dass-sb-color color-status--warning'></span>        |
-| `--color-status--warning__light` | `#ffda92` | <span class='dass-sb-color color-status--warning__light'></span> |
-| `--color-status--warning__dark`  | `#de620b` | <span class='dass-sb-color color-status--warning__dark'></span>  |
+| Token                                 | Value     | Preview                                                               |
+| ------------------------------------- | --------- | --------------------------------------------------------------------- |
+| `--dass-color-status--warning`        | `#efa002` | <span class='dass-sb-color dass-color-status--warning'></span>        |
+| `--dass-color-status--warning__light` | `#ffda92` | <span class='dass-sb-color dass-color-status--warning__light'></span> |
+| `--dass-color-status--warning__dark`  | `#de620b` | <span class='dass-sb-color dass-color-status--warning__dark'></span>  |
 
 ### Error
 
-| Token                          | Value     | Preview                                                        |
-| ------------------------------ | --------- | -------------------------------------------------------------- |
-| `--color-status--error`        | `#af095b` | <span class='dass-sb-color color-status--error'></span>        |
-| `--color-status--error__light` | `#ffafd6` | <span class='dass-sb-color color-status--error__light'></span> |
-| `--color-status--error__dark`  | `#660033` | <span class='dass-sb-color color-status--error__dark'></span>  |
+| Token                               | Value     | Preview                                                             |
+| ----------------------------------- | --------- | ------------------------------------------------------------------- |
+| `--dass-color-status--error`        | `#af095b` | <span class='dass-sb-color dass-color-status--error'></span>        |
+| `--dass-color-status--error__light` | `#ffafd6` | <span class='dass-sb-color dass-color-status--error__light'></span> |
+| `--dass-color-status--error__dark`  | `#660033` | <span class='dass-sb-color dass-color-status--error__dark'></span>  |
 
 ### Info
 
-| Token                         | Value     | Preview                                                       |
-| ----------------------------- | --------- | ------------------------------------------------------------- |
-| `--color-status--info`        | `#2196f3` | <span class='dass-sb-color color-status--info'></span>        |
-| `--color-status--info__light` | `#99e1ff` | <span class='dass-sb-color color-status--info__light'></span> |
-| `--color-status--info__dark`  | `#015aa0` | <span class='dass-sb-color color-status--info__dark'></span>  |
+| Token                              | Value     | Preview                                                            |
+| ---------------------------------- | --------- | ------------------------------------------------------------------ |
+| `--dass-color-status--info`        | `#2196f3` | <span class='dass-sb-color dass-color-status--info'></span>        |
+| `--dass-color-status--info__light` | `#99e1ff` | <span class='dass-sb-color dass-color-status--info__light'></span> |
+| `--dass-color-status--info__dark`  | `#015aa0` | <span class='dass-sb-color dass-color-status--info__dark'></span>  |
 
 ## Text
 
 The colors used by the text elements in the Design System.
 
-| Token                     | Value     | Preview                                                   |
-| ------------------------- | --------- | --------------------------------------------------------- |
-| `--color-text--dark__100` | `#1f1f22` | <span class='dass-sb-color color-text--dark__100'></span> |
-| `--color-text--dark__90`  | `#2f3033` | <span class='dass-sb-color color-text--dark__90'></span>  |
-| `--color-text--dark__70`  | `#585b60` | <span class='dass-sb-color color-text--dark__70'></span>  |
-| `--color-text--dark__50`  | `#83878e` | <span class='dass-sb-color color-text--dark__50'></span>  |
-| `--color-text--dark__30`  | `#adb2bc` | <span class='dass-sb-color color-text--dark__30'></span>  |
-| `--color-text--light__15` | `#ced1d7` | <span class='dass-sb-color color-text--light__15'></span> |
-| `--color-text--light__07` | `#eeeef0` | <span class='dass-sb-color color-text--light__07'></span> |
-| `--color-text--light__03` | `#fafafa` | <span class='dass-sb-color color-text--light__03'></span> |
-| `--color-text--light__00` | `#ffffff` | <span class='dass-sb-color color-text--light__00'></span> |
+| Token                          | Value     | Preview                                                        |
+| ------------------------------ | --------- | -------------------------------------------------------------- |
+| `--dass-color-text--dark__100` | `#1f1f22` | <span class='dass-sb-color dass-color-text--dark__100'></span> |
+| `--dass-color-text--dark__90`  | `#2f3033` | <span class='dass-sb-color dass-color-text--dark__90'></span>  |
+| `--dass-color-text--dark__70`  | `#585b60` | <span class='dass-sb-color dass-color-text--dark__70'></span>  |
+| `--dass-color-text--dark__50`  | `#83878e` | <span class='dass-sb-color dass-color-text--dark__50'></span>  |
+| `--dass-color-text--dark__30`  | `#adb2bc` | <span class='dass-sb-color dass-color-text--dark__30'></span>  |
+| `--dass-color-text--light__15` | `#ced1d7` | <span class='dass-sb-color dass-color-text--light__15'></span> |
+| `--dass-color-text--light__07` | `#eeeef0` | <span class='dass-sb-color dass-color-text--light__07'></span> |
+| `--dass-color-text--light__03` | `#fafafa` | <span class='dass-sb-color dass-color-text--light__03'></span> |
+| `--dass-color-text--light__00` | `#ffffff` | <span class='dass-sb-color dass-color-text--light__00'></span> |
