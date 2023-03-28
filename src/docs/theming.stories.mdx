@@ -4,13 +4,13 @@ import { Meta } from "@storybook/addon-docs";
 
 # Theming
 
-The `ds-ui` package offers the default DS theme set by the design system and its style guide. It's a series of CSS variables that are used globally by all components.
+The `dass-ds-ui` package offers the default DS theme set by the design system and its style guide. It's a series of CSS variables that are used globally by all components.
 
 To use the default theme, you should import it in your main application entrypoint (with the required Dass Symbols styles):
 
 ```js
 // my main app script
-import "dass-ds-ui/dist/style.css"; // the tokens DS
+import "dass-ds-ui/dist/dass-style.css"; // the tokens DS
 ```
 
 If you want to replace these values with your app style guide, changing colors, font sizes, spacing and other appearance settings, you can create a new CSS file for your application and import it in place of the default theme:
