@@ -6,7 +6,7 @@
   "module": "dist/library.mjs",
   "type": "module",
   "scripts": {
-    "build": "rollup -c -n --dass-ds-ui",
+    "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
