@@ -13,7 +13,7 @@
   "keywords": [],
   "peerDependencies": {
     "vue": "^3.2.21"
-  },
+  }, 
   "files": [
     "dist/*"
   ],
