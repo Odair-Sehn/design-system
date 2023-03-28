@@ -6,14 +6,14 @@
   "module": "dist/library.mjs",
   "type": "module",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c -n --dass-ds-ui",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
   "peerDependencies": {
     "vue": "^3.2.21"
-  }, 
+  },
   "files": [
     "dist/*"
   ],
