@@ -26,11 +26,11 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        "Welcome",
-        "Theming",
-        "Style Guide",
-        "Components",
-        "Layouts",
+        "Instalação",
+        "Tematização",
+        "Guia de Estilo",
+        "Componentes",
+        "Leiautes",
       ],
     },
   },

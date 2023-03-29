@@ -1,10 +1,10 @@
 import { Meta } from "@storybook/addon-docs";
 
-<Meta title="Style Guide/Colors" />
+<Meta title="Guia de Estilo/Cores" />
 
-# Colors
+# Cores
 
-The following tokens control the color appearance in your theme. You can use it as CSS variables in your application styles to inherit the default values in a custom element:
+Os tokens a seguir controlam a aparência da cor em seu tema. Você pode usá-lo como variáveis CSS em seus estilos de aplicativo para herdar os valores padrão em um elemento personalizado:
 
 ```css
 /* my-custom-element.css */
@@ -13,7 +13,7 @@ The following tokens control the color appearance in your theme. You can use it 
 }
 ```
 
-You can also create a new CSS theme file and customize these values with your app style guide values.
+Você também pode criar um novo arquivo de tema CSS e personalizar esses valores com os valores do guia de estilo do aplicativo.
 
 ```css
 /* my-custom-theme.css */
@@ -23,9 +23,24 @@ You can also create a new CSS theme file and customize these values with your ap
 }
 ```
 
-Now the Design System will use your new primary color in your app.
+Agora o Design System usará sua nova cor primária em seu aplicativo.
+
+
+## Primary
+
+As cores principais do Dass Design System, usadas pela maioria dos componentes.
+
+| Token                            | Value                          | Preview                                                          |
+| -------------------------------  | -----------------------------  | ---------------------------------------------------------------- |
+| `--dass-color--primary`          | `--dass-color--brand`          | <span class='dass-sb-color dass-color--primary'></span>          |
+| `--dass-color--primary__light`   | `--dass-color--brand__light`   | <span class='dass-sb-color dass-color--primary__light'></span>   |
+| `--dass-color--primary__lighter` | `--dass-color--brand__lighter` | <span class='dass-sb-color dass-color--primary__lighter'></span> |
+| `--dass-color--primary__dark`    | `--dass-color--brand__dark`    | <span class='dass-sb-color dass-color--primary__dark'></span>    |
+| `--dass-color--primary__darker`  | `--dass-color--brand__darker`  | <span class='dass-sb-color dass-color--primary__darker'></span>  |
 
 ## Brand
+
+Cores da marca, que definem a identidade visual da Dass no aplicativo.
 
 | Token                          |   Value   | Preview                                                        |
 | -----------------------------  | --------- | -------------------------------------------------------------- |
@@ -35,21 +50,10 @@ Now the Design System will use your new primary color in your app.
 | `--dass-color--brand__dark`    | `#992934` | <span class='dass-sb-color dass-color--brand__dark'></span>    |
 | `--dass-color--brand__darker`  | `#4D151A` | <span class='dass-sb-color dass-color--brand__darker'></span>  |
 
-## Primary
-
-The main colors of the DS, used by most components.
-
-| Token                            | Value                         | Preview                                                          |
-| -------------------------------  | ----------------------------- | ---------------------------------------------------------------- |
-| `--dass-color--primary`          | `--dass-color--blue`          | <span class='dass-sb-color dass-color--primary'></span>          |
-| `--dass-color--primary__light`   | `--dass-color--blue__light`   | <span class='dass-sb-color dass-color--primary__light'></span>   |
-| `--dass-color--primary__lighter` | `--dass-color--blue__lighter` | <span class='dass-sb-color dass-color--primary__lighter'></span> |
-| `--dass-color--primary__dark`    | `--dass-color--blue__dark`    | <span class='dass-sb-color dass-color--primary__dark'></span>    |
-| `--dass-color--primary__darker`  | `--dass-color--blue__darker`  | <span class='dass-sb-color dass-color--primary__darker'></span>  |
 
 ## Secondaries
 
-Supporting colors, used for details and variations.
+Cores de suporte, usadas para detalhes e variações.
 
 ### Blue
 
@@ -93,7 +97,7 @@ Supporting colors, used for details and variations.
 
 ## Neutrals
 
-Used in different contexts to balance your layouts with colors.
+Usado em diferentes contextos para equilibrar seus layouts com cores.
 
 | Token                       | Value     | Preview                                                     |
 | ----------------------      | --------- | ----------------------------------------------------------- |
@@ -109,7 +113,7 @@ Used in different contexts to balance your layouts with colors.
 
 ## Status
 
-Status indicating feedbacks for the user.
+Status indicando feedbacks para o usuário.
 
 ### Success
 
@@ -145,7 +149,7 @@ Status indicating feedbacks for the user.
 
 ## Text
 
-The colors used by the text elements in the Design System.
+As cores usadas pelos elementos de texto no Dass Design System.
 
 | Token                          | Value     | Preview                                                        |
 | ------------------------------ | --------- | -------------------------------------------------------------- |

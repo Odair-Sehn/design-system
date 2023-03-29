@@ -1,38 +1,38 @@
 import { Meta } from "@storybook/addon-docs";
 
-<Meta title="Theming" />
+<Meta title="Tematização" />
 
-# Theming
+# Tematização
 
-The `dass-ds-ui` package offers the default DS theme set by the design system and its style guide. It's a series of CSS variables that are used globally by all components.
+O pacote `dass-ds-ui` oferece o tema padrão definido pelo sistema de design e seu guia de estilo. É uma série de variáveis CSS que são usadas globalmente por todos os componentes.
 
-To use the default theme, you should import it in your main application entrypoint (with the required Dass Symbols styles):
-
-```js
-// my main app script
-import "dass-ds-ui/dist/dass-style.css"; // the tokens DS
-```
-
-If you want to replace these values with your app style guide, changing colors, font sizes, spacing and other appearance settings, you can create a new CSS file for your application and import it in place of the default theme:
+Para usar o tema padrão, você deve importá-lo em seu arquivo de inicialização do aplicativo:
 
 ```js
-// my main app script
-import "my-custom-theme.css"; // your new, shiny theme
+// main.js ou seu arquivo de inicialização do app
+import "dass-ds-ui/dist/dass-style.css"; // tokens do dass design system
 ```
 
-You can check an explanation for all style tokens and how they're used in the Style Guide section of this documentation. The full set of token CSS variables follows for reference:
+Se quiser substituir esses valores pelo guia de estilo do aplicativo, alterando cores, tamanhos de fonte, espaçamento e outras configurações de aparência, você pode criar um novo arquivo CSS para seu aplicativo e importá-lo no lugar do tema padrão:
+
+```js
+// main.js ou seu arquivo de inicialização do app
+import "my-custom-theme.css"; // seu arquivo de tema customizado
+```
+
+Você pode conferir uma explicação para todos os tokens de estilo e como eles são usados na seção Guia de estilo desta documentação. O conjunto completo de variáveis CSS dos tokens segue para referência:
 
 ```css
 /**
- * DS-UI THEME FILE
+ * DASS-DS-UI Arquivo de Tema
  *
- * This theme file has the default values used by the Design System.
- * Colors, typography rules, borders are all defined by your theme
- * file and customize the entire system in a single place.
- *
- * You can create a theme file by copying this file and changing its
- * values, then adding it to your application. The DS will replace its
- * default values with your theme values accordingly.
+ * Este arquivo de tema possui os valores padrão usados pelo Design System.
+ * Cores, regras de tipografia, bordas, sombras, espaçamento, são todas definidas pelo seu tema.
+ * Personalize todo o sistema em um único lugar.
+ 
+ * Você pode criar um arquivo de tema copiando este arquivo e alterando seus
+ * valores e, em seguida, adicioná-lo ao seu aplicativo.
+ * O Dass Design System substituirá seus valores padrões pelos valores de seu tema de acordo.
  **/
 
 :root {
@@ -94,7 +94,7 @@ You can check an explanation for all style tokens and how they're used in the St
   --dass-color-neutral__03: #fafafa;
   --dass-color-neutral__00: #ffffff;
 
-  /* Color: Statuses */
+  /* Color: Status */
   --dass-color-status--success: #72cc31;
   --dass-color-status--success__light: #bef298;
   --dass-color-status--success__dark: #3e6d1c;
@@ -122,7 +122,7 @@ You can check an explanation for all style tokens and how they're used in the St
   --dass-color-text--light__03: #fafafa;
   --dass-color-text--light__00: #ffffff;
 
-  /* Font Stacks */
+  /* Font */
   --font-family--base: "Roboto", "Helvetica Neue", Helvetica, "Nimbus Sans L",
     Arial, sans-serif;
   --font-family--system: "Inter", system-ui, sans-serif;

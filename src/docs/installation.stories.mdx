@@ -1,0 +1,61 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Instalação" />
+
+# Começando
+
+Bem-vindo à documentação do Dass Design System. Este guia ajudará você a instalar e usar o pacote dass-ds-ui lib em seus projetos.
+
+`dass-ds-ui` é compatível com Vue v3.0 e superior. Como o projeto ainda não está hospedado em um registro de pacote como o NPM, você precisará adicioná-lo ao seu projeto por meio do repositório privado para começar a usá-lo. Este tutorial ajudará em todas as etapas.
+
+## Instalação
+
+Primeiro, você precisa configurar seu ambiente, siga estas instruções no manual a seguir: 
+https://sga.grupodass.com.br/bitbucket/projects/DS/repos/ds-ui/browse/docs/INSTALL.md
+
+Em seu projeto, adicione o `dass-ds-ui` às suas dependências da seguinte forma:
+
+```bash
+# com yarn
+yarn add git+ssh://git@10.100.0.22:7999/ds/dass-ds-ui.git
+
+# com NPM
+npm install --save git+ssh://git@10.100.0.22:7999/ds/dass-ds-ui.git
+```
+
+Você pode, opcionalmente, escolher qual versão específica do pacote `dass-ds-ui` deseja usar, basta indicar sua versão na URL do repositório (por exemplo, `#v1.0`).
+Confira o log de alterações das versões: https:/ /sga.grupodass.com.br/bitbucket/projects/DS/repos/ds-ui/browse/docs/CHANGELOG.md
+
+## Como Usar
+
+Você deve adicionar o `dass-ds-ui` como um plugin em seu aplicativo.
+
+```js
+// main.js ou seu arquivo de entrada do aplicativo.
+import { createApp } from "vue";
+import dassDS from "dass-ds-ui";
+import App from "App.vue";
+
+createApp(App).use(dassDS).mount("#app");
+```
+
+Isso oferecerá todos os componentes e estilos necessários (com o tema padrão) para seu aplicativo.
+
+Agora você pode usar qualquer componente do Dass Design System sem precisar importar cada componente:
+
+```vue
+<!-- App.vue -->
+<template>
+  <dass-button :variant="ds_variant"> My DS Button </dass-button>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      ds_variant: "primary",
+    };
+  },
+};
+</script>
+```

@@ -1,18 +1,18 @@
 import { Meta } from "@storybook/addon-docs";
 
-<Meta title="Style Guide/Shadows" />
+<Meta title="Guia de Estilo/Sombras" />
 
-# Shadows
+# Sombras
 
-The following tokens control the shadow appearance in your theme. You can create new themes by setting CSS variables with different values, and the DS will replace its default values with your theme shadows accordingly.
+Os seguintes tokens controlam a aparência da sombra em seu tema. Você pode criar novos temas definindo variáveis CSS com valores diferentes, e o dass design system substituirá seus valores padrão pelas sombras do tema de acordo.
 
-For example, if you want to create a new theme with a new small shadow:
+Por exemplo, se você deseja criar um novo tema com uma nova sombra pequena:
 
 ```css
 /* my-custom-theme.css */
 
 :root {
-  --dass-shadow-sm: 0px 4px 7px 0px; /* your new small shadow sizes */
+  --dass-shadow-sm: 0px 4px 7px 0px; /* novos tamanhos de sombra personalizados */
 }
 
 .your-custom-element {
@@ -28,9 +28,9 @@ The shadow tokens need to be used together with a color token to set the shadow 
 | `dass-shadow-md` | <span class='dass-sb-shadow dass-shadow-md'></span> |
 | `dass-shadow-lg` | <span class='dass-sb-shadow dass-shadow-lg'></span> |
 
-# Focus Outline
+# Contorno do Foco
 
-The focus outline is a `outline` CSS value used to apply a subtle shadow to the focused element for accessibility use.
+O contorno do foco é um valor CSS `outline` usado para aplicar uma sombra sutil ao elemento em foco para uso de acessibilidade.
 
 ```css
 .your-form-control:focus {
@@ -38,6 +38,6 @@ The focus outline is a `outline` CSS value used to apply a subtle shadow to the 
 }
 ```
 
-| Token            | Preview                                           |
-| ---------------- | ------------------------------------------------- |
+| Token                 | Preview                                                |
+| --------------------- | ------------------------------------------------------ |
 | `--dass-shadow-focus` | <span class='dass-sb-shadow dass-shadow-focus'></span> |
