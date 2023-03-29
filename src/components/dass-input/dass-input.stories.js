@@ -1,7 +1,7 @@
 import DassInput from './dass-input.vue';
 
 export default {
-  title: 'Components/Input',
+  title: 'Componentes/Input',
   component: DassInput
 };
 

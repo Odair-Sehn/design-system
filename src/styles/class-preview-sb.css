@@ -397,3 +397,7 @@
 .dass-shadow-focus {
   outline: var(--dass-shadow-focus);
 }
+
+.sb-show-main {
+  background: #fafafa !important;
+}

@@ -11,4 +11,6 @@ export default create({
   barTextColor: 'white',
   barSelectedColor: '#00A2C7',
   barBg: '#2f3033',
+  appBorderRadius: 5,
+
 });

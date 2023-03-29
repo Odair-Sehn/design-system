@@ -1,7 +1,7 @@
 import DassButton from './dass-button.vue';
 
 export default {
-  title: 'Components/Button',
+  title: 'Componentes/Button',
   component: DassButton
 };
 

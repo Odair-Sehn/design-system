@@ -26,8 +26,7 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        "Instalação",
-        "Tematização",
+        "Início",
         "Guia de Estilo",
         "Componentes",
         "Leiautes",

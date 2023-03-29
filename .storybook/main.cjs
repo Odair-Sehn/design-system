@@ -9,5 +9,4 @@ module.exports = {
     "@storybook/addon-interactions"
   ],
   framework: "@storybook/vue3",
-  staticDirs: ["../src/assets"]
 }
