@@ -1,9 +1,9 @@
-import DassInput from './dass-input.vue';
+import DassInput from './dass-input.vue'
 
 export default {
   title: 'Componentes/Input',
   component: DassInput
-};
+}
 
 const Template = (args) => ({
   components: { DassInput },
@@ -11,9 +11,9 @@ const Template = (args) => ({
     return { args }
   },
   template: '<DassInput v-bind="args" />',
-});
+})
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 
 Default.args = {
   label: 'Label',

@@ -1,5 +1,6 @@
 <template>
   <div>
+    aaaaaaaaaaaaaaaa {{ $t('teste') }}
     <q-input :label="label" :placeholder="placeholder"/>
   </div>
 </template>

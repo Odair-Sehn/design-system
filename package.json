@@ -1,10 +1,13 @@
 {
   "name": "dass-ds-ui",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "type": "module",
+  "author": "odair.sehn@grupodass.com.br",
+  "description:": "Dass Design System",
+  "repository": "git@bitbucket.org:grupodass-com-br/ds-ui.git",
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
@@ -17,14 +20,14 @@
   "files": [
     "dist/*"
   ],
-  "author": "",
   "license": "ISC",
   "dependencies": {
     "@quasar/extras": "^1.15.11",
     "postcss": "^8.4.21",
-    "quasar": "^2.11.7",
+    "quasar": "^2.11.9",
     "rollup-plugin-postcss": "^4.0.2",
-    "vue": "^3.2.21"
+    "vue": "^3.2.21",
+    "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",

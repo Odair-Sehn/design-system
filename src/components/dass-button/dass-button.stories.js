@@ -1,9 +1,9 @@
-import DassButton from './dass-button.vue';
+import DassButton from './dass-button.vue'
 
 export default {
   title: 'Componentes/Button',
   component: DassButton
-};
+}
 
 const Template = (args) => ({
   components: { DassButton },
@@ -11,9 +11,9 @@ const Template = (args) => ({
     return { args }
   },
   template: '<DassButton v-bind="args"/>',
-});
+})
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 
 Default.args = {
   label: 'Label',
